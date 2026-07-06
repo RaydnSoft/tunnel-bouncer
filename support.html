@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tunnel Bouncer Support</title>
+  <meta name="description" content="Support page for Tunnel Bouncer.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #07080d;
+      --card: rgba(255,255,255,0.065);
+      --card-border: rgba(255,255,255,0.12);
+      --text: #f4f7fb;
+      --muted: #b7c0cc;
+      --accent: #57f0ff;
+      --accent2: #ff477e;
+      --link: #75f4ff;
+      --shadow: rgba(0,0,0,0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 10%, rgba(87,240,255,0.18), transparent 30%),
+        radial-gradient(circle at 80% 0%, rgba(255,71,126,0.16), transparent 34%),
+        linear-gradient(180deg, #090b13 0%, var(--bg) 55%, #05060a 100%);
+      padding: 32px 16px;
+    }
+    main { width: min(980px, 100%); margin: 0 auto; }
+    .hero {
+      padding: 40px 28px;
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
+      box-shadow: 0 22px 60px var(--shadow);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -20% -35% -20%;
+      height: 140px;
+      background: linear-gradient(90deg, transparent, rgba(87,240,255,0.18), rgba(255,71,126,0.16), transparent);
+      filter: blur(20px);
+      transform: rotate(-2deg);
+      pointer-events: none;
+    }
+    .app-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 22px;
+      display: block;
+      object-fit: cover;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: 0 12px 30px rgba(87,240,255,0.16), inset 0 1px 0 rgba(255,255,255,0.28);
+      background: #101323;
+    }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 4rem); line-height: 1.05; letter-spacing: -0.05em; }
+    .subtitle { margin: 0; color: var(--muted); font-size: 1.05rem; max-width: 760px; }
+    .nav { display: flex; gap: 10px; flex-wrap: wrap; margin: 22px 0 0; }
+    .nav a { color: var(--text); text-decoration: none; border: 1px solid var(--card-border); border-radius: 999px; padding: 8px 14px; background: rgba(255,255,255,0.055); }
+    section { margin-top: 22px; padding: 28px; border-radius: 24px; border: 1px solid var(--card-border); background: var(--card); box-shadow: 0 14px 42px rgba(0,0,0,0.22); }
+    h2 { margin-top: 0; font-size: 1.75rem; letter-spacing: -0.03em; }
+    h3 { margin-top: 1.55rem; margin-bottom: 0.35rem; font-size: 1.08rem; }
+    p, li { color: var(--muted); }
+    strong { color: var(--text); }
+    a { color: var(--link); text-underline-offset: 3px; }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-top: -8px; }
+    .notice { border-left: 3px solid var(--accent); padding: 12px 14px; border-radius: 12px; background: rgba(87,240,255,0.07); color: var(--text); }
+    footer { color: var(--muted); text-align: center; padding: 28px 10px 0; font-size: 0.95rem; }
+    @media (max-width: 640px) { body { padding: 18px 12px; } .hero, section { padding: 22px; border-radius: 22px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <img src="app-icon.png" alt="Tunnel Bouncer app icon" style="width:72px;height:72px;border-radius:22px;object-fit:cover;border:1px solid rgba(255,255,255,0.18);box-shadow:0 12px 30px rgba(87,240,255,0.16), inset 0 1px 0 rgba(255,255,255,0.28);margin-bottom:18px;" onerror="this.style.display='none'">
+      <h1>Tunnel Bouncer Support</h1>
+      <p class="subtitle">
+        Need help, found a bug, or want to send feedback? This page contains support information for Tunnel Bouncer.
+      </p>
+      <nav class="nav" aria-label="Support navigation">
+        <a href="index.html">Privacy Policy</a>
+        <a href="#english">English</a>
+        <a href="#deutsch">Deutsch</a>
+        <a href="#contact">Contact / Kontakt</a>
+      </nav>
+    </header>
+
+    <section id="english" lang="en">
+      <h2>Support</h2>
+      <p>
+        Tunnel Bouncer is a fast arcade game built around timing, focus, and quick reactions.
+        If something does not work as expected, please contact support.
+      </p>
+
+      <h3>Contact</h3>
+      <p id="contact">
+        Email:
+        <br>
+        <strong>feedback.tunnelbouncer@gmail.com</strong>
+      </p>
+
+      <h3>Frequently Asked Questions</h3>
+
+      <h3>How do rewarded ads work?</h3>
+      <p>
+        Rewarded ads are optional. You can choose to watch an ad to receive a second chance in the game.
+        The app does not force ads during normal gameplay.
+      </p>
+
+      <h3>Why are leaderboards or achievements not updating?</h3>
+      <p>
+        Tunnel Bouncer uses Apple Game Center for leaderboards and achievements. Please make sure that you
+        are signed in to Game Center in your device settings and that you have an active internet connection.
+      </p>
+
+      <h3>How can I report a bug?</h3>
+      <p>
+        Send an email with your device model, iOS version, app version, and a short description of what happened.
+        Screenshots or screen recordings are helpful if available.
+      </p>
+
+      <h3>Privacy Policy</h3>
+      <p>
+        You can read the privacy policy here:
+        <br>
+        <a href="index.html">Tunnel Bouncer Privacy Policy</a>
+      </p>
+    </section>
+
+    <section id="deutsch" lang="de">
+      <h2>Support</h2>
+      <p>
+        Tunnel Bouncer ist ein schnelles Arcade-Spiel rund um Timing, Konzentration und schnelle Reaktionen.
+        Falls etwas nicht wie erwartet funktioniert, kontaktiere bitte den Support.
+      </p>
+
+      <h3>Kontakt</h3>
+      <p>
+        E-Mail:
+        <br>
+        <strong>feedback.tunnelbouncer@gmail.com</strong>
+      </p>
+
+      <h3>Häufige Fragen</h3>
+
+      <h3>Wie funktionieren Belohnungsanzeigen?</h3>
+      <p>
+        Belohnungsanzeigen sind freiwillig. Du kannst dich dafür entscheiden, eine Anzeige anzusehen, um im Spiel
+        eine zweite Chance zu erhalten. Die App zwingt dich während des normalen Spielens nicht dazu, Werbung anzusehen.
+      </p>
+
+      <h3>Warum werden Bestenlisten oder Erfolge nicht aktualisiert?</h3>
+      <p>
+        Tunnel Bouncer verwendet Apple Game Center für Bestenlisten und Erfolge. Bitte stelle sicher, dass du in den
+        Geräteeinstellungen bei Game Center angemeldet bist und eine aktive Internetverbindung hast.
+      </p>
+
+      <h3>Wie kann ich einen Fehler melden?</h3>
+      <p>
+        Sende bitte eine E-Mail mit deinem Gerätemodell, deiner iOS-Version, der App-Version und einer kurzen Beschreibung,
+        was passiert ist. Screenshots oder Bildschirmaufnahmen helfen, falls verfügbar.
+      </p>
+
+      <h3>Datenschutzerklärung</h3>
+      <p>
+        Die Datenschutzerklärung findest du hier:
+        <br>
+        <a href="index.html">Tunnel Bouncer Datenschutzerklärung</a>
+      </p>
+    </section>
+
+    <section>
+      <p class="notice">
+        Before publishing, replace <strong>feedback.tunnelbouncer@gmail.com</strong> with your real support email address.
+        Optional: add your real app icon as <strong>app-icon.png</strong> in the same folder.
+      </p>
+    </section>
+
+    <footer>
+      © 2026 Tunnel Bouncer. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
